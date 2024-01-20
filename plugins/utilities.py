@@ -1,9 +1,5 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2023 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+# Ragdoll - UserBot
+
 """
 ✘ Commands Available -
 
@@ -476,7 +472,7 @@ async def abs_rmbg(event):
 )
 async def telegraphcmd(event):
     xx = await event.eor(get_string("com_1"))
-    match = event.pattern_match.group(1).strip() or "Ultroid"
+    match = event.pattern_match.group(1).strip() or "Ragdoll"
     reply = await event.get_reply_message()
     if not reply:
         return await xx.eor("`Reply to Message.`")
@@ -702,7 +698,7 @@ async def get_restriced_msg(event):
     chat, msg = get_chat_and_msgid(match)
     if not (chat and msg):
         return await event.eor(
-            f"{get_string('gms_1')}!\nEg: `https://t.me/TeamUltroid/3 or `https://t.me/c/1313492028/3`"
+            f"{get_string('gms_1')}!\nEg: `https://t.me/TeamRagdoll/3`"
         )
     try:
         message = await event.client.get_messages(chat, ids=msg)

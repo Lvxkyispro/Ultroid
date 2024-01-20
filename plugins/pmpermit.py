@@ -1,9 +1,5 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2023 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+# Ragdoll - UserBot
+
 """
 ✘ Commands Available -
 
@@ -816,7 +812,7 @@ async def in_pm_ans(event):
                 await event.builder.document(
                     res,
                     title="Inline PmPermit",
-                    description="~ @TeamUltroid",
+                    description="~ @TeamRagdoll",
                     text=msg_,
                     buttons=buttons,
                     link_preview=False,
@@ -833,14 +829,14 @@ async def in_pm_ans(event):
                 title="Inline PMPermit.",
                 type=_type,
                 text=msg_,
-                description="@TeamUltroid",
+                description="@TeamRagdoll",
                 include_media=include_media,
                 buttons=buttons,
                 thumb=cont,
                 content=cont,
             )
         ]
-    await event.answer(res, switch_pm="• Ultroid •", switch_pm_param="start")
+    await event.answer(res, switch_pm="• Ragdoll •", switch_pm_param="start")
 
 
 @callback(re.compile("admin_only(.*)"), from_users=[ultroid_bot.uid])

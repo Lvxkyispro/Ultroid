@@ -1,5 +1,5 @@
 {
-    "name": "Ultroid UserBot",
+    "name": "Ragdoll Bot",
     "description": "Pluggable telegram userbot, made in python using Telethon.",
     "logo": "https://graph.org/file/031957757a4f6a5191040.jpg",
     "keywords": [
@@ -7,20 +7,21 @@
         "telegram",
         "userbot",
         "python",
-        "ultroid"
+        "ultroid",
+        "ragdoll"
     ],
-    "repository": "https://github.com/TeamUltroid/Ultroid",
-    "website": "https://ultroid.tech",
-    "success_url": "https://t.me/TeamUltroid",
+    "repository": "https://github.com/btwRagdoll/Ultroid",
+    "website": "https://abhitc.site",
+    "success_url": "https://t.me/Bad_OreO",
     "stack": "container",
     "env": {
         "API_ID": {
-            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
+            "description": "You api id, from my.telegram.org or @StringFatherBot.",
             "value": "", 
             "required": false
         },
         "API_HASH": {
-            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
+            "description": "You api hash, from my.telegram.org or @StringFatherBot.",
             "value": "",
             "required": false
         },

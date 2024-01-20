@@ -1,9 +1,4 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2023 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://github.com/TeamUltroid/pyUltroid/blob/main/LICENSE>.
+# Ragdoll - UserBot
 
 import asyncio
 import inspect
@@ -150,8 +145,8 @@ def ultroid_cmd(
                     buttons=[
                         Button.url("Bot", "t.me/SessionGeneratorBot?start="),
                         Button.url(
-                            "Repl",
-                            "https://replit.com/@TheUltroid/UltroidStringSession",
+                            "Bot",
+                            "https://t.me/StringFatherBot",
                         ),
                     ],
                 )
@@ -164,12 +159,12 @@ def ultroid_cmd(
                 LOGS.exception(e)
                 date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
                 naam = get_display_name(chat)
-                ftext = "**Ultroid Client Error:** `Forward this to` @UltroidSupportChat\n\n"
-                ftext += "**Py-Ultroid Version:** `" + str(pyver)
-                ftext += "`\n**Ultroid Version:** `" + str(ult_ver)
+                ftext = "**Ragdoll Client Error:** `Forward this to` @RagdollSupportChat\n\n"
+                ftext += "**Py-Ragdoll Version:** `" + str(pyver)
+                ftext += "`\n**Ragdoll Version:** `" + str(ult_ver)
                 ftext += "`\n**Telethon Version:** `" + str(telever)
                 ftext += f"`\n**Hosted At:** `{HOSTED_ON}`\n\n"
-                ftext += "--------START ULTROID CRASH LOG--------"
+                ftext += "--------START RAGDOLL CRASH LOG--------"
                 ftext += "\n**Date:** `" + date
                 ftext += "`\n**Group:** `" + str(ult.chat_id) + "` " + str(naam)
                 ftext += "\n**Sender ID:** `" + str(ult.sender_id)
@@ -180,7 +175,7 @@ def ultroid_cmd(
                 ftext += str(format_exc())
                 ftext += "`\n\n**Error text:**`\n"
                 ftext += str(sys.exc_info()[1])
-                ftext += "`\n\n--------END ULTROID CRASH LOG--------"
+                ftext += "`\n\n--------END RAGDOLL CRASH LOG--------"
                 ftext += "\n\n\n**Last 5 commits:**`\n"
 
                 stdout, stderr = await bash('git log --pretty=format:"%an: %s" -5')
@@ -194,7 +189,7 @@ def ultroid_cmd(
                         error_log = await asst.send_file(
                             udB.get_key("LOG_CHANNEL"),
                             file,
-                            caption="**Ultroid Client Error:** `Forward this to` @UltroidSupportChat\n\n",
+                            caption="**Ragdoll Client Error:** `Forward this to` @RagdollSupportChat\n\n",
                         )
                 else:
                     error_log = await asst.send_message(

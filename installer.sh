@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REPO="https://github.com/TeamUltroid/Ultroid.git"
+REPO="https://github.com/btwRagdoll/Ultroid.git"
 CURRENT_DIR="$(pwd)"
 ENV_FILE_PATH=".env"
 DIR="/root/TeamUltroid"
@@ -98,11 +98,11 @@ check_python() {
 }
 
 clone_repo() {
-    # check if pyultroid, startup, plugins folders exist
+    # check if pyRagdoll, startup, plugins folders exist
     cd $DIR
     if [ -d $DIR ]; then
         if [ -d $DIR/.git ]; then
-            echo -e "Updating Ultroid ${BRANCH}... "
+            echo -e "Updating Ragdoll ${BRANCH}... "
             cd $DIR
             git pull
             currentbranch="$(git rev-parse --abbrev-ref HEAD)"
@@ -133,7 +133,7 @@ clone_repo() {
             export BRANCH="main"
         fi
         mkdir -p $DIR
-        echo -e "Cloning Ultroid ${BRANCH}... "
+        echo -e "Cloning Ragdoll ${BRANCH}... "
         git clone -b $BRANCH $REPO $DIR
     fi
 }
@@ -168,9 +168,9 @@ misc_install() {
             git pull
         else
             echo -e "Cloning VCBOT.."
-            git clone https://github.com/TeamUltroid/VcBot $DIR/vcbot
+            git clone https://github.com/btwRagdoll/VcBot $DIR/vcbot
         fi
-        pip3 install pytgcalls==3.0.0.dev23 && pip3 install av -q --no-binary av
+        pip3 install pytgcalls==3.0.0.dev24 && pip3 install av -q --no-binary av
     fi
 }
 
@@ -189,7 +189,7 @@ dep_install() {
 }
 
 main() {
-    echo -e "Starting Ultroid Setup..."
+    echo -e "Starting Ragdoll Setup..."
     if [ -d "pyUltroid" ] && [ -d "resources" ] && [ -d "plugins" ]; then
         DIR=$CURRENT_DIR
     fi

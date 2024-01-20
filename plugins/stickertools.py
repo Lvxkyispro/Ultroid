@@ -1,9 +1,5 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2023 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+# Ragdoll - UserBot
+
 """
 ✘ Commands Available -
 
@@ -81,7 +77,7 @@ async def pack_kangish(_):
     elif not (_e and _e.sticker and _e.file.mime_type == "image/webp"):
         return await _.eor(get_string("sts_4"))
     msg = await _.eor(get_string("com_1"))
-    _packname = cmdtext or f"Ultroid Kang Pack By {_.sender_id}"
+    _packname = cmdtext or f"Ragdoll Kang Pack By {_.sender_id}"
     typee = None
     if not local:
         _id = _e.media.document.attributes[1].stickerset.id
@@ -207,7 +203,7 @@ async def hehe(args):
         if not emoji:
             emoji = "🏵"
         if len(splat) == 3:
-            pack = splat[2]  # User sent ultroid_both
+            pack = splat[2]  # User sent Ragdoll_both
             emoji = splat[1]
         elif len(splat) == 2:
             if splat[1].isnumeric():

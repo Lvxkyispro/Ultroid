@@ -1,9 +1,5 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2023 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://github.com/TeamUltroid/pyUltroid/blob/main/LICENSE>.
+# Ragdoll - UserBot
+
 
 import contextlib
 import glob
@@ -66,7 +62,7 @@ class Loader:
                 continue
             except Exception as exc:
                 modl = None
-                self._logger.error(f"pyUltroid - {self.key} - ERROR - {plugin}")
+                self._logger.error(f"pyRagdoll - {self.key} - ERROR - {plugin}")
                 self._logger.exception(exc)
                 continue
             if _single and log:

@@ -1,9 +1,5 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2023 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+# Ragdoll - UserBot
+
 """
 ✘ Commands Available -
 
@@ -286,7 +282,7 @@ async def pixelator(event):
     temp = cv2.resize(input_, (w, h), interpolation=cv2.INTER_LINEAR)
     output = cv2.resize(temp, (width, height), interpolation=cv2.INTER_NEAREST)
     cv2.imwrite("output.jpg", output)
-    await msg.respond("• Pixelated by Ultroid", file="output.jpg")
+    await msg.respond("• Pixelated by Ragdoll", file="output.jpg")
     await msg.delete()
     os.remove("output.jpg")
     os.remove(image)

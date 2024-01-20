@@ -1,9 +1,5 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2023 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+# Ragdoll - UserBot
+
 """
 ✘ Commands Available -
 
@@ -345,7 +341,7 @@ async def quott_(event):
         )
     except Exception as er:
         return await msg.edit(str(er))
-    message = await reply.reply("Quotly by Ultroid", file=file)
+    message = await reply.reply("Quotly by Ragdoll", file=file)
     os.remove(file)
     await msg.delete()
     return message

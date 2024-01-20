@@ -1,9 +1,3 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2023 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 from . import get_help
 
 __doc__ = get_help("help_chats")
@@ -76,7 +70,7 @@ async def _(e):
     if match:
         split = match.split(maxsplit=1)
         request = split[0] in ["r", "request"]
-        title = "Created by Ultroid"
+        title = "Created by Ragdoll"
         if len(split) > 1:
             match = split[1]
             spli = match.split(maxsplit=1)

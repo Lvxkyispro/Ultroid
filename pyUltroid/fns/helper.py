@@ -1,10 +1,4 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2023 TeamUltroid
 #
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://github.com/TeamUltroid/pyUltroid/blob/main/LICENSE>.
-
 import asyncio
 import math
 import os
@@ -169,20 +163,20 @@ if run_as_module:
             output = "**Plugin** - `{}`\n".format(plug)
             for i in HELP[plug]:
                 output += i
-            output += "\n© @TeamUltroid"
-            await eod(ok, f"✓ `Ultroid - Installed`: `{plug}` ✓\n\n{output}")
+            output += "\n© @TeamRagdoll"
+            await eod(ok, f"✓ `Ragdoll - Installed`: `{plug}` ✓\n\n{output}")
         elif plug in CMD_HELP:
             output = f"Plugin Name-{plug}\n\n✘ Commands Available-\n\n"
             output += str(CMD_HELP[plug])
-            await eod(ok, f"✓ `Ultroid - Installed`: `{plug}` ✓\n\n{output}")
+            await eod(ok, f"✓ `Ragdoll - Installed`: `{plug}` ✓\n\n{output}")
         else:
             try:
                 x = f"Plugin Name-{plug}\n\n✘ Commands Available-\n\n"
                 for d in LIST[plug]:
                     x += HNDLR + d + "\n"
-                await eod(ok, f"✓ `Ultroid - Installed`: `{plug}` ✓\n\n`{x}`")
+                await eod(ok, f"✓ `Ragdoll - Installed`: `{plug}` ✓\n\n`{x}`")
             except BaseException:
-                await eod(ok, f"✓ `Ultroid - Installed`: `{plug}` ✓")
+                await eod(ok, f"✓ `Ragdoll - Installed`: `{plug}` ✓")
 
     async def heroku_logs(event):
         """
@@ -210,7 +204,7 @@ if run_as_module:
             event.chat_id,
             file="ultroid-heroku.log",
             thumb=ULTConfig.thumb,
-            caption="**Ultroid Heroku Logs.**",
+            caption="**Ragdoll Heroku Logs.**",
         )
 
         os.remove("ultroid-heroku.log")
@@ -218,7 +212,7 @@ if run_as_module:
 
     async def def_logs(ult, file):
         await ult.respond(
-            "**Ultroid Logs.**",
+            "**Ragdoll Logs.**",
             file=file,
             thumb=ULTConfig.thumb,
         )
@@ -237,8 +231,8 @@ if run_as_module:
         )
         ac_br = repo.active_branch.name
         ch_log = tldr_log = ""
-        ch = f"<b>Ultroid {ultroid_version} updates for <a href={UPSTREAM_REPO_URL}/tree/{ac_br}>[{ac_br}]</a>:</b>"
-        ch_tl = f"Ultroid {ultroid_version} updates for {ac_br}:"
+        ch = f"<b>Ragdoll {ultroid_version} updates for <a href={UPSTREAM_REPO_URL}/tree/{ac_br}>[{ac_br}]</a>:</b>"
+        ch_tl = f"Ragdoll {ultroid_version} updates for {ac_br}:"
         d_form = "%d/%m/%y || %H:%M"
         for c in repo.iter_commits(diff):
             ch_log += f"\n\n💬 <b>{c.count()}</b> 🗓 <b>[{c.committed_datetime.strftime(d_form)}]</b>\n<b><a href={UPSTREAM_REPO_URL.rstrip('/')}/commit/{c}>[{c.summary}]</a></b> 👨‍💻 <code>{c.author}</code>"
