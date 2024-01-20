@@ -15,7 +15,7 @@ REPOMSG = """
 
 RP_BUTTONS = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/btwRagdoll/Ultroid"),
+        Button.url(get_string("bot_3"), "https://zxlink.in/REPO"),
         Button.url("Addons", "https://github.com/btwRagdoll/UltroidAddons"),
     ],
     [Button.url("Support Group", "t.me/RagdollSupportChat")],
