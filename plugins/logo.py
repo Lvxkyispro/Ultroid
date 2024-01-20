@@ -64,7 +64,7 @@ async def logo_gen(event):
         else:
             pics = []
             async for i in event.client.iter_messages(
-                "@OreoLogos", filter=InputMessagesFilterPhotos
+                "@btwOreo", filter=InputMessagesFilterPhotos
             ):
                 pics.append(i)
             id_ = random.choice(pics)
