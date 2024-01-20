@@ -23,7 +23,7 @@
 • `{i}rmbg <reply to pic>`
     Remove background from that picture.
 
-• `{i}telegraph <reply to media/text>`
+• `{i}tglink <reply to media/text>`
     Upload media/text to telegraph.
 
 • `{i}json <reply to msg>`
@@ -468,7 +468,7 @@ async def abs_rmbg(event):
 
 
 @ultroid_cmd(
-    pattern="telegraph( (.*)|$)",
+    pattern="tglink( (.*)|$)",
 )
 async def telegraphcmd(event):
     xx = await event.eor(get_string("com_1"))
