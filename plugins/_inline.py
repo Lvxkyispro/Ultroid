@@ -53,10 +53,10 @@ SUP_BUTTONS = [
 
 @in_pattern(owner=True, func=lambda x: not x.text)
 async def inline_alive(o):
-    TLINK = inline_pic() or "https://graph.org/file/74d6259983e0642923fdb.jpg"
+    TLINK = inline_pic() or "https://graph.org/file/7a694a122164a8fcc3817.jpg"
     MSG = "• **Ragdoll Bot •**"
     WEB0 = InputWebDocument(
-        "https://graph.org/file/acd4f5d61369f74c5e7a7.jpg", 0, "image/jpg", []
+        "https://graph.org/file/fabfaec5d5d0007f51b86.jpg", 0, "image/jpg", []
     )
     RES = [
         await o.builder.article(

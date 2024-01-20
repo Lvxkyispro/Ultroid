@@ -52,7 +52,7 @@ async def useUltroid(rs):
     msg = await asst.send_message(
         LOG_CHANNEL,
         ULTSTRING,
-        file="https://graph.org/file/54a917cc9dbb94733ea5f.jpg",
+        file="https://graph.org/file/3d9628a7b4f2fb934dda6.jpg",
         buttons=button,
     )
     if not (rs.chat_id == LOG_CHANNEL and rs.client._bot):

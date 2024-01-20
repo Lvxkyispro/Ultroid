@@ -310,7 +310,7 @@ async def autopilot():
                 LOGS.exception(er)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo, _ = await download_file(
-            "https://graph.org/file/27c6812becf6f376cbb10.jpg", "channelphoto.jpg"
+            "https://graph.org/file/0fa2242dfa9067ed57406.jpg", "channelphoto.jpg"
         )
         ll = await ultroid_bot.upload_file(photo)
         try:
@@ -341,8 +341,8 @@ async def customize():
             sir = f"@{ultroid_bot.me.username}"
         file = random.choice(
             [
-                "https://graph.org/file/92cd6dbd34b0d1d73a0da.jpg",
-                "https://graph.org/file/a97973ee0425b523cdc28.jpg",
+                "https://graph.org/file/2dbf49b52878e6f7de035.jpg",
+                "https://graph.org/file/19dab4080f5cb19bd141c.jpg",
                 "resources/extras/ultroid_assistant.jpg",
             ]
         )
@@ -471,7 +471,7 @@ async def ready():
     if not udB.get_key("INIT_DEPLOY"):  # Detailed Message at Initial Deploy
         MSG = """🎇 **Thanks for Deploying Ragdoll Userbot!**
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
-        PHOTO = "https://graph.org/file/54a917cc9dbb94733ea5f.jpg"
+        PHOTO = "https://graph.org/file/51cea1fb4847952f49e6a.jpg"
         BTTS = Button.inline("• Click to Start •", "initft_2")
         udB.set_key("INIT_DEPLOY", "Done")
     else:

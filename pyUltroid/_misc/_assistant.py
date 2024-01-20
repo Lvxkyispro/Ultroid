@@ -96,7 +96,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                         description="(c) TeamRagdoll",
                         text=MSG,
                         thumb=InputWebDocument(
-                            "https://graph.org/file/dde85d441fa051a0d7d1d.jpg",
+                            "https://graph.org/file/fabfaec5d5d0007f51b86.jpg",
                             0,
                             "image/jpeg",
                             [],
