@@ -77,7 +77,7 @@ The Ragdoll Userbot
   ◍ Telethon - {}
 """
 
-in_alive = "{}\n\n🌀 <b>Ragdoll Version -><b> <code>{}</code>\n🌀 <b>PyRagdoll -></b> <code>{}</code>\n🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n🌀 <b>Branch -></b>[ {} ]\n\n• <b>Join @bad_OreO</b>"
+in_alive = "{}\n\n🌀 <b>Ragdoll Version -><b> <code>{}</code>\n🌀 <b>PyRagdoll -></b> <code>{}</code>\n🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n🌀 <b>Branch -></b>[ Private ]\n\n• <b>Join @bad_OreO</b>"
 
 
 @callback("alive")
