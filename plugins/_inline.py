@@ -43,7 +43,7 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/btwRagdoll/Ultroid"),
+        Button.url("• Repo •", url="https://zxlink.in/REPO"),
         Button.url("• Support •", url="t.me/RagdollSupportChat"),
     ],
 ]
