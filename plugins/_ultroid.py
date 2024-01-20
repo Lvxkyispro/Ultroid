@@ -8,7 +8,7 @@ from . import LOG_CHANNEL, LOGS, Button, asst, eor, get_string, ultroid_cmd
 
 REPOMSG = """
 • **Ragdoll USERBOT** •\n
-• Repo - [Click Here](https://github.com/btwRagdoll/Ultroid)
+• Repo - [Click Here](https://zxlink.in/REPO)
 • Addons - [Click Here](https://github.com/btwRagdoll/UltroidAddons)
 • Support - @RagdollSupportChat
 """
