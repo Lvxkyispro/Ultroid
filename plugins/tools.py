@@ -39,8 +39,6 @@ import secrets
 from asyncio import TimeoutError
 import contextlib
 
-from glob import glob
-
 try:
     import cv2
 except ImportError:
