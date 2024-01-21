@@ -126,10 +126,13 @@ async def id_func(event):
         text += f"`Replied to message ID`: `{reply.id}`\n"
         text += f"`Replied to User ID`: `{reply.sender_id}`\n"
     text += f"`Current Chat ID`: `{event.chat_id}`"
+    if event.media:
+        bot_api_file_id = event.file.id
+        data += f"\n**Bot API File ID:**  `{bot_api_file_id}`"
     await event.eor(text)
 
 '''
- async def _(event):
+async def _(event):
     ult = event
     match = event.pattern_match.group(1).strip()
     if match:
