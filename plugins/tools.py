@@ -125,6 +125,7 @@ async def id_func(event):
     if reply := (await event.get_reply_message()):
         text += f"`Replied to message ID`: `{reply.id}`\n"
         text += f"`Replied to User ID`: `{reply.sender_id}`\n"
+        text += f"\n**Bot API File ID:**  `{bot_api_file_id}`\n"
     text += f"`Current Chat ID`: `{event.chat_id}`"
     if event.media:
         bot_api_file_id = event.file.id
