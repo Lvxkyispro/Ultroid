@@ -63,7 +63,7 @@ def ULTPIC():
 
 buttons = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/btwRagdoll/Ultroid"),
+        Button.url(get_string("bot_3"), "https://zxlink.in/REPO"),
         Button.url(get_string("bot_4"), "t.me/RagdollSupportChat"),
     ]
 ]
