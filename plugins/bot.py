@@ -63,7 +63,7 @@ def ULTPIC():
 
 buttons = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/btwRagdoll/Ultroid"),
+        Button.url(get_string("bot_3"), "https://zxlink.in/REPO"),
         Button.url(get_string("bot_4"), "t.me/RagdollSupportChat"),
     ]
 ]
@@ -77,7 +77,7 @@ The Ragdoll Userbot
   ◍ Telethon - {}
 """
 
-in_alive = "{}\n\n🌀 <b>Ragdoll Version -><b> <code>{}</code>\n🌀 <b>PyRagdoll -></b> <code>{}</code>\n🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n🌀 <b>Branch -></b>[ {} ]\n\n• <b>Join @bad_OreO</b>"
+in_alive = "{}\n\n🌀 <b>Ragdoll Version -><b> <code>{}</code>\n🌀 <b>PyRagdoll -></b> <code>{}</code>\n🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n🌀 <b>Branch -></b>[ Private ]\n\n• <b>Join @bad_OreO</b>"
 
 
 @callback("alive")
@@ -331,7 +331,7 @@ async def _(e):
         )
     else:
         await xx.edit(
-            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://github.com/btwRagdoll/Ultroid/tree/{branch}">[{branch}]</a></strong>',
+            f'<code>Your BOT is </code><strong>up-to-date</strong><code> with </code><strong><a href="https://zxlink.in/REPO">[Ragdoll]</a></strong>',
             parse_mode="html",
             link_preview=False,
         )
