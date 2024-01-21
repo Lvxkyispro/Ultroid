@@ -128,7 +128,7 @@ async def id_func(event):
     text += f"`Current Chat ID`: `{event.chat_id}`"
     if event.media:
         bot_api_file_id = event.file.id
-        data += f"\n**Bot API File ID:**  `{bot_api_file_id}`"
+        text += f"\n**Bot API File ID:**  `{bot_api_file_id}`"
     await event.eor(text)
 
 '''
