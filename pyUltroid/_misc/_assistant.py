@@ -25,9 +25,9 @@ IN_BTTS = [
     [
         Button.url(
             "Repository",
-            url="https://github.com/btwRagdoll/Ultroid",
+            url="https://zxlink.in/REPO",
         ),
-        Button.url("Support", url="https://t.me/bad_OreOt"),
+        Button.url("Support", url="https://t.me/RagdollSupportChat"),
     ]
 ]
 
