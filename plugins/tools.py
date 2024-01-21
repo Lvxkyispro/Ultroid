@@ -111,25 +111,25 @@ async def _(event):
     manager=True,
 )
 async def id_func(event):
-    text = f"`Sender ID`: `{event.sender_id}`\n"
+    text = f"**Sender ID** : `{event.sender_id}`\n"
     if match := event.pattern_match.group(1).strip():
         try:
             ids = await event.client.parse_id(match)
         except Exception as er:
             return await event.eor(str(er))
         if str(ids).startswith("-"):
-            text += f"`Requested Chat ID`: "
+            text += f"**Requested Chat ID** : "
         else:
-            text += f"`Requested User ID`: "
+            text += f"**Requested User ID** : "
         text += f"`{ids}`\n"
     if reply := (await event.get_reply_message()):
-        text += f"`Replied to message ID`: `{reply.id}`\n"
-        text += f"`Replied to User ID`: `{reply.sender_id}`\n"
+        text += f"**Replied to message ID** : `{reply.id}`\n"
+        text += f"**Replied to User ID** : `{reply.sender_id}`\n"
         #text += f"\n**Bot API File ID:**  `{bot_api_file_id}`\n"
     if event.media:
         bot_api_file_id = event.file.id
         text += f"\n**Bot API File ID:**  `{bot_api_file_id}`"
-    text += f"`Current Chat ID`: `{event.chat_id}`"
+    text += f"**Current Chat ID** : `{event.chat_id}`"
     await event.eor(text)
 
 '''
