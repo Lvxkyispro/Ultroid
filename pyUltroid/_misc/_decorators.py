@@ -176,9 +176,9 @@ def ultroid_cmd(
                 ftext += "`\n\n**Error text:**`\n"
                 ftext += str(sys.exc_info()[1])
                 ftext += "`\n\n--------END RAGDOLL CRASH LOG--------"
-                ftext += "\n\n\n**Last 5 commits:**`\n"
+                ftext += "\n\n\n**Last 3 commits:**`\n"
 
-                stdout, stderr = await bash('git log --pretty=format:"%an: %s" -5')
+                stdout, stderr = await bash('git log --pretty=format:"%an: %s" -3')
                 result = stdout + (stderr or "")
 
                 ftext += f"{result}`"
