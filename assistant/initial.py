@@ -10,20 +10,7 @@ STRINGS = {
 🧿 Ragdoll is Pluggable and powerful Telethon Userbot, made in Python from Scratch. It is Aimed to Increase Security along with Addition of Other Useful Features.
 
 ❣ Made by **@Bad_OreO**""",
-    3: """**💡• FAQs •**
-
--> [Username Tracker](https://t.me/UltroidUpdates/24)
--> [Keeping Custom Addons Repo](https://t.me/UltroidUpdates/28)
--> [Disabling Deploy message](https://t.me/UltroidUpdates/27)
--> [Setting up TimeZone](https://t.me/UltroidUpdates/22)
--> [About Inline PmPermit](https://t.me/UltroidUpdates/21)
--> [About Dual Mode](https://t.me/UltroidUpdates/18)
--> [Custom Thumbnail](https://t.me/UltroidUpdates/13)
--> [About FullSudo](https://t.me/UltroidUpdates/11)
--> [Setting Up PmBot](https://t.me/UltroidUpdates/2)
--> [Also Check](https://t.me/UltroidUpdates/14)
-
-**• To Know About Updates**
+    3: """**• To Know About Updates**
   - Join @TeamRagdoll.""",
     4: f"""• `To Know All Available Commands`
 
