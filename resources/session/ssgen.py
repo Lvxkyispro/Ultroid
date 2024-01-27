@@ -4,14 +4,7 @@
 import os
 from time import sleep
 
-ULTROID = r"""
-  _    _ _ _             _     _
- | |  | | | |           (_)   | |
- | |  | | | |_ _ __ ___  _  __| |
- | |  | | | __| '__/ _ \| |/ _  |
- | |__| | | |_| | | (_) | | (_| |
-  \____/|_|\__|_|  \___/|_|\__,_|
-"""
+RAGDOLL = r""" R A G D O L L """
 
 
 def spinner(x):
@@ -58,7 +51,7 @@ def telethon_session():
 
         x = "\bDone. Installed and imported Telethon."
     clear_screen()
-    print(ULTROID)
+    print(RAGDOLL)
     print(x)
 
     # the imports
@@ -120,7 +113,7 @@ def pyro_session():
         from pyrogram import Client
         
     clear_screen()
-    print(ULTROID)
+    print(RAGDOLL)
     print(x)
 
     # generate a session
@@ -142,7 +135,7 @@ def pyro_session():
 
 def main():
     clear_screen()
-    print(ULTROID)
+    print(RAGDOLL)
     try:
         type_of_ss = int(
             input(
