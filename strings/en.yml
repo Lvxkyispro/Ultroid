@@ -167,11 +167,11 @@ afk_5: "**I'm Going AFK.**\n\n**Reason:** `{}`"
 afk_6: "**I'm Going AFK.**"
 
 # bot
-bot_1: "Hey,  I am alive."
+bot_1: "Hey, I am alive."
 bot_2: "Stats"
 bot_3: "Repo"
 bot_4: "Support"
-bot_5: "• `Restarting...`"
+bot_5: "• Restarting..."
 alive_1: "**The Ragdoll Userbot...**\n\n**{}**\n\n✵ **Owner** - `{}`\n✵ **Ragdoll** - `{}`\n✵ **Py-Ragdoll** - `{}`\n✵ **UpTime** - `{}`\n✵ **Python** - `{}`\n✵ **Telethon** - `{}`\n✵ **Branch** - `Private`"
 log: "**Heroku** Ragdoll Logs.\nPasted [here]({}) too!"
 ping: "**Pong !!** `{}ms`\n**Uptime** - `{}`"
