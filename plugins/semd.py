@@ -60,7 +60,7 @@ async def semd_plugin(ult):
 
     paste = await pastee(path)
     caption = f"<b>>> </b><code>{path}</code> \n{paste} \n" \
-        f"© <a href='{repo}'>Team Ragdoll</a>"
+        f"© @Team Ragdoll</a>"
     try:
         await ult.client.send_file(
             ult.chat_id, path,
