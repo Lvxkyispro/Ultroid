@@ -4,6 +4,7 @@ __doc__ = get_help("help_bot")
 
 import os
 import sys
+import html
 import time
 from platform import python_version as pyver
 from random import choice
