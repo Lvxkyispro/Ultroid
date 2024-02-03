@@ -181,10 +181,10 @@ async def _(event):
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
     owner = OWNER_NAME
-    first_name = html.escape(user.first_name)
+    #first_name = html.escape(user.first_name)
     if first_name is not None:
         first_name = first_name.replace("\u2060", "")
-    await x.edit(get_string("ping").format(end, uptime, first_name))
+    await x.edit(get_string("ping").format(end, uptime, owner))
 
 
 @ultroid_cmd(
