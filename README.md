@@ -5,4 +5,4 @@
   <b>Ragdoll - Bot</b>
 </h1>
 
-<b>A stable pluggable Telegram userbot + Voice & Video Call music bot, based on Telethon.</b>
+<b align="center">A stable pluggable Telegram userbot + Voice & Video Call music bot, based on Telethon.</b>
